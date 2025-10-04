@@ -1,0 +1,68 @@
+/* Make the whole screen use flexbox to center */
+body {
+  margin: 0;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  background-color: #f1f3f6; /* Light background color */
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* Todo container */
+.todo-container {
+  width: 90%;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* App Title */
+.todo-container h1 {
+  color: #198754;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+/* Todo input section */
+input[type="text"],
+input[type="date"] {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 8px 10px;
+  font-size: 16px;
+}
+
+/* Add & Delete buttons */
+.btn-success {
+  width: 70px;
+  font-weight: 600;
+}
+
+.btn-danger {
+  width: 30p;
+  font-weight: 600;
+}
+
+/* Todo list rows */
+.row {
+  margin-top: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+/* Hover effect for rows */
+.row:hover {
+  background-color: #e9f7ef;
+  border-radius: 8px;
+  transition: 0.3s;
+}
